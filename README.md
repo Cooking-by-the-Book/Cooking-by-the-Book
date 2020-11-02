@@ -1,4 +1,4 @@
-# Cooking-by-the-Book
+# Cooking by the Book
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -12,13 +12,12 @@
 Our goal is to create an online cookbook full of recipes. This  app will allow users to sign in and post their favorite recipes and view other recipes that other people might enjoy.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- **Category:** Utility App
-- **Mobile:** This apps main focus is for mobile usage however it could definitly be just as good on a computer as a web app. Similar apps include Instagram, and Twitter.
-- **Story:** Create a platform were users can connect and share their favorite reciepes. Users can add their own personal reciepes and save some reciepes from others that they want to try out.
-- **Market:** This app is for anyone that is interested in cooking new reciepes.
-- **Habit:** This app could be used multiple times a day based on how many times you want to try new reciepes and or look for future reciepes to try.
-- **Scope:** Intitally this is to be used as a cookbook app were you save reciepes you want to try. This could evolve into a social media app in which you can follow other people to see what they are cooking.
+- **Category:** *Food & Drink / Utility App*
+- **Mobile:**   * This apps main focus is for  IOS mobile usage however it could definitly be just as good on a computer as a web app. Similar apps include Instagram, and Twitter.*
+- **Story:**    * Create a platform were users can connect and share their favorite reciepes. Users can add their own personal reciepes and save some reciepes from others that they want to try out.*
+- **Market:** *Anyone can use the app and share what they cook.*
+- **Habit:** * This app could be used multiple times a day based on how many times you want to try new reciepes and or look for future reciepes to try.*
+- **Scope:** *Intitally this is to be used as a cookbook app were you save reciepes you want to try. This could evolve into a social media app in which you can follow other people to see what they are cooking.*
 
 ## Product Spec
 
@@ -26,53 +25,82 @@ Our goal is to create an online cookbook full of recipes. This  app will allow u
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Launch Screen
+* Main Screen
+* Authentication
+* Recipe Feed
+* Profile page
+* Saved posts page
+* Add Recipe Page
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Commenting
+* Searching Recipes
+* Preparation steps
 
 ### 2. Screen Archetypes
 
-* [Main Screen]
-   * [list associated required story here]
-* [Sign In]
-    * [Authentication]
-* [Sign Up]
-    * [Authentication]
-* [Reciepe Feed]
+* Main Screen
+   * Presents a screen which prompts the user to either sign up or sign in to a previous account made.
+* Sign In
+    * Presents the user with two text boxes, username and password, prompting them to put in their credentials to log in.
+* Sign Up
+    * Presents the user with two text boxes, username and password, prompting them to put in their credentials to create an account to sign up with.
+* Recipe Feed
+    * Upon signing into their account, the user is then presented with a multiple recently posted recipes within a feed.
+* Detailed Recipe View
+    * Upon clicking on a recipe from the feed, profile page, or saved recipes pages. It presents the user with details about a recipe.
+* Profile Page
+    * Upon selecting the profile page tab the user is presented with all of the recipes that the account has posted.
+* Saved Recipes Page
+    * Upon selecting the saved recipes tab the user is presented with all of the recipes that the account has saved.
+* Add a Recipe
+    * When clicking the add reciepe button the user should be prompted to add a new reciepe with an image, ingredients, and preparation steps to make the food.
+    
 
-* [Detailed Reciepe view]
 
-* [Profile Page your posts]
-
-* [Profile Page saved posts]
-
-* [Add a reciepe ]
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Recipe Feed
+* Profile
+* Saved Recipes
+
+Optional:
+
+* Search Recipes
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Launch Screen
+   * Forced Log In/Sign Up if account is not currently signed into application.
+   * If signed in, Recipe Feed is shown.
+* Recipe Feed
+   * Profile Tab Item segues into user Profile page.
+   * Saved Recipes Tab Item segues into Saved Recipes page.
+   * Recipe Table Cell segues into Detailed Recipe page.
+   * Add Recipe Button segues into Add Recipe Page.
+* Profile
+   * User Grid View Cell contains user-uploaded recipes. Tapping on Cell segues into a Detailed Recipe page for user's recipe.
+   * Recipe Feed Tab Item segues into Recipe Feed page.
+   * Saved Recipes Tab Item segues into Saved Recipes page.
+* Saved Recipes
+   * User Grid View Cell contains user-saved recipes. Tapping on Cell segues into a Detailed Recipe page for saved recipe.
+   * Recipe Feed Tab Item segues into Recipe Feed page.
+   * Profile Tab Item segues into user Profile page.
+* Detailed Recipe
+   * Recipe Feed Tab Item segues into Recipe Feed page.
+   * Profile Tab Item segues into user Profile page.
+   * Saved Recipes Tab Item segues into Saved Recipes page.
+   * Back Button segues back into previous screen.
+
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="wireframe.png" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
+### Digital Wireframes & Mockups
+<img src="https://raw.githubusercontent.com/Cooking-by-the-Book/Cooking-by-the-Book/main/wireframe.PNG" width=600>
 
 ### [BONUS] Interactive Prototype
 
