@@ -142,20 +142,7 @@ Optional:
 - Logout
     - (Signout the current user)
 - Home Feed Screen
-      - (Read/GET) Query all recipes by date
-         ```swift
-         let query = PFQuery(className:"Post")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-            if let error = error { 
-               print(error.localizedDescription)
-            } else if let posts = posts {
-               print("Successfully retrieved \(posts.count) posts.")
-           // TODO: Do something with posts...
-            }
-         }
-         ```
+    - (Read/GET) Query all recipes by date
     - (Create/POST) Save a recipe
     - (Delete) Go in for the current user and delete the saved post from the array.
 
