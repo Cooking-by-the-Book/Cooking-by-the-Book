@@ -135,8 +135,6 @@ Optional:
    | updatedAt     | DateTime | date when post is last updated (default field) |
 
 ### Networking
-- [Add list of network requests by screen ]
-
 - Login
     - (Read/GET) Query to check if user with this password is in the database.
 - Logout
