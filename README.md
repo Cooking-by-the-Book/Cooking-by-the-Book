@@ -105,10 +105,77 @@ Optional:
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+
+#### Recipe
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user recipe (default field) |
+   | name          | String   | name of the recipe |
+   | author        | Pointer to User| recipe author |
+   | image         | File     | image of recipe that user posts |
+   | ingredients   | String   | ingredients required to make the recipe |
+   | createdAt     | DateTime | date when recipe is created (default field) |
+   | updatedAt     | DateTime | date when recipe is last updated (default field) |
+   
+   
+   -----
+   
+   #### Author
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the author (default field) |
+   | name          | String   | name of the author |
+   | password          | String   | password of the author to login |
+   | savedPosts    | Array of Pointers   | array of saved recipes |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+
 ### Networking
 - [Add list of network requests by screen ]
+
+- Login
+    - (Read/GET) Query to check if user with this password is in the database.
+- Logout
+    - (Signout the current user)
+- Home Feed Screen
+      - (Read/GET) Query all recipes by date
+         ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+    - (Create/POST) Save a recipe
+    - (Delete) Go in for the current user and delete the saved post from the array.
+
+
+- Create Post Screen
+    - (Create/POST) Create a new recipe object
+
+
+- Profile Screen
+    - (Read/GET) Query logged in user object
+    - (Read/GET) Query all recipes created by the current user by date
+
+
+- Saved Recipes Screen
+    - (Read/GET) Query logged in user object
+    - (Read/GET) Query all recipes saved by the user
+
+
 - [Create basic snippets for each Parse network request]
+    - We do not have these created now, but we will have them when we get the basic snippets for them.
+
+
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
