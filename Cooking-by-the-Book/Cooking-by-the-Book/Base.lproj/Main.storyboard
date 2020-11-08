@@ -304,7 +304,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="jHU-8A-Es2">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="5CH-m4-VV6">
+                        <barButtonItem key="rightBarButtonItem" title="item" image="pencil" catalog="system" id="5CH-m4-VV6">
                             <connections>
                                 <segue destination="WGJ-k7-J5F" kind="presentation" id="rWU-fu-1t2"/>
                             </connections>
@@ -421,6 +421,7 @@
     </scenes>
     <resources>
         <image name="favor-icon" width="30" height="30"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
