@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		11F35C762557612200C520F8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C752557612200C520F8 /* SignInViewController.swift */; };
 		11F35C782557631D00C520F8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C772557631D00C520F8 /* SignUpViewController.swift */; };
 		11F35C7A255763A900C520F8 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C79255763A900C520F8 /* AddRecipeViewController.swift */; };
+		4ABE78D7256103B7000E9906 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE78D6256103B6000E9906 /* ProfileViewController.swift */; };
 		6666B36A82707CD4BB17B716 /* Pods_Cooking_by_the_Book.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9217062984805FFD1C3BCB /* Pods_Cooking_by_the_Book.framework */; };
 		B25125BF8D0BD3ACC9D75A8B /* Pods_Cooking_by_the_BookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEFD27AFD993BC0745B3460 /* Pods_Cooking_by_the_BookTests.framework */; };
 		C1391EAD55577DC615D588DF /* Pods_Cooking_by_the_Book_Cooking_by_the_BookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786813071AF7E2EAEB04C5AC /* Pods_Cooking_by_the_Book_Cooking_by_the_BookUITests.framework */; };
@@ -62,6 +63,7 @@
 		1FEFD27AFD993BC0745B3460 /* Pods_Cooking_by_the_BookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooking_by_the_BookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A60968ED0C8C7FC61BCFD04 /* Pods-Cooking-by-the-Book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking-by-the-Book.debug.xcconfig"; path = "Target Support Files/Pods-Cooking-by-the-Book/Pods-Cooking-by-the-Book.debug.xcconfig"; sourceTree = "<group>"; };
 		3B1738A4571471057F2B1E84 /* Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests.release.xcconfig"; path = "Target Support Files/Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests/Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4ABE78D6256103B6000E9906 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		786813071AF7E2EAEB04C5AC /* Pods_Cooking_by_the_Book_Cooking_by_the_BookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooking_by_the_Book_Cooking_by_the_BookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB6BADF0D8F7376E75C28B0 /* Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests.debug.xcconfig"; path = "Target Support Files/Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests/Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD9217062984805FFD1C3BCB /* Pods_Cooking_by_the_Book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooking_by_the_Book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 				11F35C4325575BA700C520F8 /* AppDelegate.swift */,
 				11F35C4525575BA700C520F8 /* SceneDelegate.swift */,
 				11F35C4925575BA700C520F8 /* Main.storyboard */,
+				4ABE78D6256103B6000E9906 /* ProfileViewController.swift */,
 				11F35C79255763A900C520F8 /* AddRecipeViewController.swift */,
 				11F35C772557631D00C520F8 /* SignUpViewController.swift */,
 				11F35C752557612200C520F8 /* SignInViewController.swift */,
@@ -164,7 +167,6 @@
 				166D2D755521F6047FF9B195 /* Pods-Cooking-by-the-BookTests.debug.xcconfig */,
 				F655D680E6C43FE665B06E91 /* Pods-Cooking-by-the-BookTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -421,6 +423,7 @@
 				11F35C762557612200C520F8 /* SignInViewController.swift in Sources */,
 				11F35C7425575FE200C520F8 /* MainPageViewController.swift in Sources */,
 				11F35C4425575BA700C520F8 /* AppDelegate.swift in Sources */,
+				4ABE78D7256103B7000E9906 /* ProfileViewController.swift in Sources */,
 				11F35C4625575BA700C520F8 /* SceneDelegate.swift in Sources */,
 				11F35C782557631D00C520F8 /* SignUpViewController.swift in Sources */,
 			);
