@@ -1,0 +1,6 @@
+framework module Pods_Cooking_by_the_Book_Cooking_by_the_BookUITests {
+  umbrella header "Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
