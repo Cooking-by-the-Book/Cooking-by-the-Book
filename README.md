@@ -10,6 +10,7 @@
 ### Description
 
 Our goal is to create an online cookbook full of recipes. This  app will allow users to sign in and post their favorite recipes and view other recipes that other people might enjoy.
+
 Joey Thomas
 Edgar Reyes
 Nick Tralongo
