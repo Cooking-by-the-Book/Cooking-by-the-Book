@@ -167,6 +167,8 @@ Optional:
 
 ### Milestones
 
-## Milestone 1
+#### Milestone 1
+<img src='https://raw.githubusercontent.com/Cooking-by-the-Book/Cooking-by-the-Book/main/CbtB.gif' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
 
-<img src='https://raw.githubusercontent.com/Cooking-by-the-Book/Cooking-by-the-Book/main/CbtB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+#### Milestone 2
+<img src='https://raw.githubusercontent.com/Cooking-by-the-Book/Cooking-by-the-Book/main/CbtB2.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough 2' />
