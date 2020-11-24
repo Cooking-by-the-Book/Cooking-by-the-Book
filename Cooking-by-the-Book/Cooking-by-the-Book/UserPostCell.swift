@@ -10,6 +10,7 @@ import UIKit
 
 class UserPostCell: UICollectionViewCell {
     
+    @IBOutlet weak var Username: UILabel!
     @IBOutlet weak var UserThumbail: UIImageView!
 
 }

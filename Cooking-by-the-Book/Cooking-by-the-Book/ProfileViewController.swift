@@ -14,6 +14,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
 
     var posts = [PFObject]()
     
+    @IBOutlet weak var username: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -27,12 +28,14 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         layout.minimumLineSpacing = 2
         layout.minimumInteritemSpacing = 0
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 2
-        layout.itemSize = CGSize(width: width, height: width*1.35)
+        layout.itemSize = CGSize(width: width, height: width)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
+        query.whereKey("author", equalTo: PFUser.current())
+        query.order(byDescending: "createdAt")
         query.limit = 20
         
         query.findObjectsInBackground { (posts, error) in
@@ -52,6 +55,9 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UserPostCell", for: indexPath) as! UserPostCell
         let post = posts[indexPath.row]
+        
+        let user = post["author"] as! PFUser
+        username.text = user.username
         
         let postImage = post["image"] as! PFFileObject
         let urlString = postImage.url!

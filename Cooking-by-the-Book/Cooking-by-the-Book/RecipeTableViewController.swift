@@ -29,6 +29,7 @@ class RecipeTableViewController: UITableViewController {
         
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
+        query.order(byDescending: "createdAt")
         query.limit = 20
         
         query.findObjectsInBackground { (posts, error) in
