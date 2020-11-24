@@ -18,7 +18,6 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func onSignOut(_ sender: Any) {
-        print("Help I'm stuck")
         
         PFUser.logOut()
         
