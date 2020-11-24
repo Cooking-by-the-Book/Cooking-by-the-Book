@@ -62,7 +62,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     @IBAction func onSignOut(_ sender: Any) {
-        print("Help I'm stuck")
         
         PFUser.logOut()
         
