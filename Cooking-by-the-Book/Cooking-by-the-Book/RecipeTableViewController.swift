@@ -62,8 +62,6 @@ class RecipeTableViewController: UITableViewController {
         let user = post["author"] as! PFUser
         cell.recipeAuthor.text = user.username
         
-        print(user.username ?? "This didn't work")
-        
         cell.recipeTitle.text = post["title"] as? String
         
         let imageFile = post["image"] as! PFFileObject

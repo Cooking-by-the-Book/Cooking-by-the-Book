@@ -8,13 +8,57 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
 
+    var posts = [PFObject]()
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        layout.minimumLineSpacing = 2
+        layout.minimumInteritemSpacing = 0
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 2
+        layout.itemSize = CGSize(width: width, height: width*1.35)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let query = PFQuery(className: "Posts")
+        query.includeKey("author")
+        query.limit = 20
+        
+        query.findObjectsInBackground { (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.collectionView.reloadData()
+            }
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return posts.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UserPostCell", for: indexPath) as! UserPostCell
+        let post = posts[indexPath.row]
+        
+        let postImage = post["image"] as! PFFileObject
+        let urlString = postImage.url!
+        let url = URL(string: urlString)!
+        
+        cell.UserThumbail.af.setImage(withURL: url)
+        return cell
     }
     
     @IBAction func onSignOut(_ sender: Any) {
