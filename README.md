@@ -18,11 +18,11 @@ Nathan Latronica
 
 ### App Evaluation
 - **Category:** *Food & Drink / Utility App*
-- **Mobile:**   * This apps main focus is for  IOS mobile usage however it could definitly be just as good on a computer as a web app. Similar apps include Instagram, and Twitter.*
-- **Story:**    * Create a platform were users can connect and share their favorite reciepes. Users can add their own personal reciepes and save some reciepes from others that they want to try out.*
+- **Mobile:**   * This apps main focus is for  IOS mobile usage however it could definitely be just as good on a computer as a web app. Similar apps include Instagram, and Twitter.*
+- **Story:**    * Create a platform were users can connect and share their favorite recipes. Users can add their own personal recipes and save some recipes from others that they want to try out.*
 - **Market:** *Anyone can use the app and share what they cook.*
-- **Habit:** * This app could be used multiple times a day based on how many times you want to try new reciepes and or look for future reciepes to try.*
-- **Scope:** *Intitally this is to be used as a cookbook app were you save reciepes you want to try. This could evolve into a social media app in which you can follow other people to see what they are cooking.*
+- **Habit:** * This app could be used multiple times a day based on how many times you want to try new recipes and or look for future recipes to try.*
+- **Scope:** *Initially this is to be used as a cookbook app were you save recipes you want to try. This could evolve into a social media app in which you can follow other people to see what they are cooking.*
 
 ## Product Spec
 
@@ -61,8 +61,8 @@ Nathan Latronica
 * Saved Recipes Page
     * Upon selecting the saved recipes tab the user is presented with all of the recipes that the account has saved.
 * Add a Recipe
-    * When clicking the add reciepe button the user should be prompted to add a new reciepe with an image, ingredients, and preparation steps to make the food.
-    
+    * When clicking the add recipe button the user should be prompted to add a new recipe with an image, ingredients, and preparation steps to make the food.
+
 
 
 ### 3. Navigation
@@ -109,7 +109,7 @@ Optional:
 
 ### [BONUS] Interactive Prototype
 
-## Schema 
+## Schema
 ### Models
 
 
@@ -124,10 +124,10 @@ Optional:
    | ingredients   | String   | ingredients required to make the recipe |
    | createdAt     | DateTime | date when recipe is created (default field) |
    | updatedAt     | DateTime | date when recipe is last updated (default field) |
-   
-   
+
+
    -----
-   
+
    #### Author
 
    | Property      | Type     | Description |
@@ -143,7 +143,7 @@ Optional:
 - Login
     - (Read/GET) Query to check if user with this password is in the database.
 - Logout
-    - (Signout the current user)
+    - (Sign-out the current user)
 - Home Feed Screen
     - (Read/GET) Query all recipes by date
     - (Create/POST) Save a recipe
@@ -169,3 +169,11 @@ Optional:
 
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+### Milestones
+
+#### Milestone 1
+<img src='https://raw.githubusercontent.com/Cooking-by-the-Book/Cooking-by-the-Book/main/CbtB.gif' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
+
+#### Milestone 2
+<img src='https://raw.githubusercontent.com/Cooking-by-the-Book/Cooking-by-the-Book/main/CbtB2.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough 2' />
