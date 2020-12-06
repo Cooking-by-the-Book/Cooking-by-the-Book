@@ -228,7 +228,63 @@
             </objects>
             <point key="canvasLocation" x="-191" y="82"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Recipe Details Controller-->
+        <scene sceneID="wAv-Xa-Peh">
+            <objects>
+                <viewController id="ibE-1e-7Hb" customClass="RecipeDetailsController" customModule="Cooking_by_the_Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m94-nn-ciR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4At-zT-hoN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSw-hm-EK8">
+                                <rect key="frame" x="20" y="420" width="374" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EB-LI-6YW">
+                                <rect key="frame" x="20" y="491" width="374" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrW-wx-wDq">
+                                <rect key="frame" x="20" y="530" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHc-Ua-WIN">
+                                <rect key="frame" x="20" y="559" width="374" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jk7-AQ-wSo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xdg-yM-f4M"/>
+                    <connections>
+                        <outlet property="recipeAuthor" destination="4EB-LI-6YW" id="BjM-8N-JVZ"/>
+                        <outlet property="recipeImage" destination="4At-zT-hoN" id="ngC-j3-FiH"/>
+                        <outlet property="recipeIngredients" destination="sHc-Ua-WIN" id="mDi-hS-owU"/>
+                        <outlet property="recipeTitle" destination="zSw-hm-EK8" id="9Wa-oD-xJC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neT-5y-pjv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.6376811594205" y="-1255.5803571428571"/>
+        </scene>
+        <!--Recipe Feed-->
         <scene sceneID="8NS-9R-b0h">
             <objects>
                 <tableViewController id="uNC-Sk-WQq" customClass="RecipeTableViewController" customModule="Cooking_by_the_Book" sceneMemberID="viewController">
@@ -275,6 +331,7 @@
                                     <outlet property="recipeImage" destination="x3O-qW-vZ3" id="Uo1-dC-a8A"/>
                                     <outlet property="recipeTitle" destination="Guh-LU-mgl" id="9B4-KW-OYI"/>
                                     <outlet property="savedButton" destination="4j4-Nx-Hl2" id="6iu-RW-YC8"/>
+                                    <segue destination="ibE-1e-7Hb" kind="show" id="6vt-5p-KjD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -283,7 +340,7 @@
                             <outlet property="delegate" destination="uNC-Sk-WQq" id="ys6-q8-6lF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="jHU-8A-Es2">
+                    <navigationItem key="navigationItem" title="Recipe Feed" id="jHU-8A-Es2">
                         <barButtonItem key="rightBarButtonItem" title="item" image="pencil" catalog="system" id="5CH-m4-VV6">
                             <connections>
                                 <segue destination="WGJ-k7-J5F" kind="presentation" id="rWU-fu-1t2"/>

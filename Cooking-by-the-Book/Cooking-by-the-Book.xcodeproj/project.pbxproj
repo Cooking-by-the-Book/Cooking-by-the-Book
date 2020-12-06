@@ -19,6 +19,7 @@
 		11F35C782557631D00C520F8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C772557631D00C520F8 /* SignUpViewController.swift */; };
 		11F35C7A255763A900C520F8 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C79255763A900C520F8 /* AddRecipeViewController.swift */; };
 		1570F58D256B032900255C95 /* UserPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570F58C256B032900255C95 /* UserPostCell.swift */; };
+		4A265FF4257C59D10001BA8A /* RecipeDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A265FF3257C59D10001BA8A /* RecipeDetailsController.swift */; };
 		4ABE78D7256103B7000E9906 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE78D6256103B6000E9906 /* ProfileViewController.swift */; };
 		4ABE7ED4256C6D49009F358C /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE7ED3256C6D49009F358C /* RecipeTableViewController.swift */; };
 		4ABE7ED9256C6DCC009F358C /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABE7ED8256C6DCC009F358C /* RecipeCell.swift */; };
@@ -67,6 +68,7 @@
 		1FEFD27AFD993BC0745B3460 /* Pods_Cooking_by_the_BookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cooking_by_the_BookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A60968ED0C8C7FC61BCFD04 /* Pods-Cooking-by-the-Book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking-by-the-Book.debug.xcconfig"; path = "Target Support Files/Pods-Cooking-by-the-Book/Pods-Cooking-by-the-Book.debug.xcconfig"; sourceTree = "<group>"; };
 		3B1738A4571471057F2B1E84 /* Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests.release.xcconfig"; path = "Target Support Files/Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests/Pods-Cooking-by-the-Book-Cooking-by-the-BookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A265FF3257C59D10001BA8A /* RecipeDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsController.swift; sourceTree = "<group>"; };
 		4ABE78D6256103B6000E9906 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4ABE7ED3256C6D49009F358C /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
 		4ABE7ED8256C6DCC009F358C /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				11F35C4325575BA700C520F8 /* AppDelegate.swift */,
 				11F35C4525575BA700C520F8 /* SceneDelegate.swift */,
 				11F35C4925575BA700C520F8 /* Main.storyboard */,
+				4A265FF3257C59D10001BA8A /* RecipeDetailsController.swift */,
 				4ABE7ED3256C6D49009F358C /* RecipeTableViewController.swift */,
 				4ABE7ED8256C6DCC009F358C /* RecipeCell.swift */,
 				4ABE78D6256103B6000E9906 /* ProfileViewController.swift */,
@@ -438,6 +441,7 @@
 				4ABE78D7256103B7000E9906 /* ProfileViewController.swift in Sources */,
 				11F35C4625575BA700C520F8 /* SceneDelegate.swift in Sources */,
 				11F35C782557631D00C520F8 /* SignUpViewController.swift in Sources */,
+				4A265FF4257C59D10001BA8A /* RecipeDetailsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
