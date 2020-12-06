@@ -78,14 +78,22 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         delegate.window?.rootViewController = mainPageViewController
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let recipe = posts[indexPath.row]
+        
+        // Send the recipe along to the details view
+        let detailedViewController = segue.destination as! RecipeDetailsController
+        
+        detailedViewController.recipe = recipe
     }
-    */
+    
 
 }
