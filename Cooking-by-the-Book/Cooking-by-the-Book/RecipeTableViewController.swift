@@ -13,6 +13,8 @@ import AlamofireImage
 class RecipeTableViewController: UITableViewController {
     
     var posts = [PFObject]()
+    var currentUser = PFUser.current()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +72,18 @@ class RecipeTableViewController: UITableViewController {
         let url = URL(string:urlString)!
         
         cell.recipeImage.af_setImage(withURL: url)
-
+        
+        let objects = (currentUser?["savedPosts"] as? [PFObject]) ?? []
+        var objectIds:[String] = []
+        for object in objects {
+            objectIds.append(object.objectId!)
+        }
+        
+        if( objectIds.contains(post.objectId ?? "")){
+            cell.setFavorite(true)
+        }
+        cell.recipe = post
+        
         return cell
     }
     

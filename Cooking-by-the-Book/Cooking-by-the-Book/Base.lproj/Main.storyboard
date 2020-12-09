@@ -331,6 +331,7 @@
                                             <state key="normal" image="favor-icon"/>
                                             <connections>
                                                 <action selector="favoriteRecipe:" destination="uNC-Sk-WQq" eventType="touchUpInside" id="o5E-Js-GPR"/>
+                                                <action selector="saveRecipe:" destination="ec6-2e-mqF" eventType="touchUpInside" id="yz6-7N-bg1"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author of the Recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGv-n3-5C6">
@@ -492,7 +493,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zhM-Gj-hYw"/>
+        <segue reference="6vt-5p-KjD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="favor-icon" width="30" height="30"/>

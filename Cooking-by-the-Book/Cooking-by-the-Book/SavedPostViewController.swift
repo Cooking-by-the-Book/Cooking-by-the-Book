@@ -43,6 +43,7 @@ class SavedPostViewController: UIViewController, UICollectionViewDataSource, UIC
         query.findObjectsInBackground {(posts, error) in
             if posts != nil {
                 self.posts = posts!
+                self.posts.reverse()
                 self.collectionView.reloadData()
             }
         }
