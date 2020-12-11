@@ -85,6 +85,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
         let cell = sender as! UICollectionViewCell
         let indexPath = collectionView.indexPath(for: cell)!
         let recipe = posts[indexPath.row]

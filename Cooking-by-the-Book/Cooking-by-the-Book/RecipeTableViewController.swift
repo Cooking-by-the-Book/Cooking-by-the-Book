@@ -90,17 +90,27 @@ class RecipeTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        guard let identifier = segue.identifier else { return }
         
-        // Find the Recipe
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPath(for: cell)!
-        let recipe = posts[indexPath.row]
-        
-        // Send the recipe along to the details view
-        let detailedViewController = segue.destination as! RecipeDetailsController
-        
-        detailedViewController.recipe = recipe
-        
+        switch identifier {
+            case "addRecipe":
+                // Find the Recipe
+                print("addRecipe")
+                break
+            case "detailedRecipe":
+                print("detailedRecipe Time")
+                let cell = sender as! UITableViewCell
+                let indexPath = tableView.indexPath(for: cell)!
+                let recipe = posts[indexPath.row]
+
+                // Send the recipe along to the details view
+                let detailedViewController = segue.destination as! RecipeDetailsController
+
+                detailedViewController.recipe = recipe
+                break
+            default:
+                print("unexpected segue identifier")
+            }
         
         
     }
