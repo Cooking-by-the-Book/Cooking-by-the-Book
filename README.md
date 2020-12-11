@@ -177,3 +177,6 @@ Optional:
 
 #### Milestone 2
 <img src='https://raw.githubusercontent.com/Cooking-by-the-Book/Cooking-by-the-Book/main/CbtB2.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough 2' />
+
+#### Milestone Final
+<img src='http://g.recordit.co/R7Ef5dnIfg.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough 2' />
