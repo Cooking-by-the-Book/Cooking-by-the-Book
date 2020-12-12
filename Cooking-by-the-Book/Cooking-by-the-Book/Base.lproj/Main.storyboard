@@ -139,7 +139,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvT-0B-f3a">
                                 <rect key="frame" x="53" y="117" width="309" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -256,7 +256,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSw-hm-EK8">
                                 <rect key="frame" x="20" y="413" width="374" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -331,7 +331,6 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <state key="normal" image="favor-icon"/>
                                             <connections>
-                                                <action selector="favoriteRecipe:" destination="uNC-Sk-WQq" eventType="touchUpInside" id="o5E-Js-GPR"/>
                                                 <action selector="saveRecipe:" destination="ec6-2e-mqF" eventType="touchUpInside" id="yz6-7N-bg1"/>
                                             </connections>
                                         </button>
@@ -498,7 +497,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6vt-5p-KjD"/>
+        <segue reference="zkJ-zp-KMt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.down.heart" catalog="system" width="128" height="109"/>
