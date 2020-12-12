@@ -1,5 +1,8 @@
 # Cooking by the Book
 
+## Demo
+<img src='https://raw.githubusercontent.com/Cooking-by-the-Book/Cooking-by-the-Book/main/CBTB_Final.gif' title='Video Walkthrough Final' width='' alt='Video Walkthrough Final' />
+
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
