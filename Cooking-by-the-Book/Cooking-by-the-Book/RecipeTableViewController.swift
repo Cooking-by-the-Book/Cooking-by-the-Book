@@ -115,8 +115,4 @@ class RecipeTableViewController: UITableViewController {
         
     }
     
-    @IBAction func favoriteRecipe(_ sender: Any) {
-//        let 
-    }
-    
 }

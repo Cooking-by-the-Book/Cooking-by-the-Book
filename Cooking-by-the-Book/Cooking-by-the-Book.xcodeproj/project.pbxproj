@@ -15,8 +15,6 @@
 		11F35C5B25575BAA00C520F8 /* Cooking_by_the_BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C5A25575BAA00C520F8 /* Cooking_by_the_BookTests.swift */; };
 		11F35C6625575BAA00C520F8 /* Cooking_by_the_BookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C6525575BAA00C520F8 /* Cooking_by_the_BookUITests.swift */; };
 		11F35C7425575FE200C520F8 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C7325575FE200C520F8 /* MainPageViewController.swift */; };
-		11F35C762557612200C520F8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C752557612200C520F8 /* SignInViewController.swift */; };
-		11F35C782557631D00C520F8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C772557631D00C520F8 /* SignUpViewController.swift */; };
 		11F35C7A255763A900C520F8 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F35C79255763A900C520F8 /* AddRecipeViewController.swift */; };
 		1540E68925806B7A0099EAA3 /* SavedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1540E68825806B7A0099EAA3 /* SavedPostCell.swift */; };
 		1540E69B258075630099EAA3 /* SavedPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1540E69A258075630099EAA3 /* SavedPostViewController.swift */; };
@@ -62,8 +60,6 @@
 		11F35C6525575BAA00C520F8 /* Cooking_by_the_BookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cooking_by_the_BookUITests.swift; sourceTree = "<group>"; };
 		11F35C6725575BAA00C520F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11F35C7325575FE200C520F8 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		11F35C752557612200C520F8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		11F35C772557631D00C520F8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		11F35C79255763A900C520F8 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 		1540E68825806B7A0099EAA3 /* SavedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostCell.swift; sourceTree = "<group>"; };
 		1540E69A258075630099EAA3 /* SavedPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostViewController.swift; sourceTree = "<group>"; };
@@ -144,8 +140,6 @@
 				4ABE7ED8256C6DCC009F358C /* RecipeCell.swift */,
 				4ABE78D6256103B6000E9906 /* ProfileViewController.swift */,
 				11F35C79255763A900C520F8 /* AddRecipeViewController.swift */,
-				11F35C772557631D00C520F8 /* SignUpViewController.swift */,
-				11F35C752557612200C520F8 /* SignInViewController.swift */,
 				11F35C7325575FE200C520F8 /* MainPageViewController.swift */,
 				11F35C4C25575BAA00C520F8 /* Assets.xcassets */,
 				11F35C4E25575BAA00C520F8 /* LaunchScreen.storyboard */,
@@ -439,7 +433,6 @@
 			files = (
 				11F35C7A255763A900C520F8 /* AddRecipeViewController.swift in Sources */,
 				4ABE7ED4256C6D49009F358C /* RecipeTableViewController.swift in Sources */,
-				11F35C762557612200C520F8 /* SignInViewController.swift in Sources */,
 				4ABE7ED9256C6DCC009F358C /* RecipeCell.swift in Sources */,
 				1570F58D256B032900255C95 /* UserPostCell.swift in Sources */,
 				11F35C7425575FE200C520F8 /* MainPageViewController.swift in Sources */,
@@ -447,7 +440,6 @@
 				4ABE78D7256103B7000E9906 /* ProfileViewController.swift in Sources */,
 				11F35C4625575BA700C520F8 /* SceneDelegate.swift in Sources */,
 				1540E69B258075630099EAA3 /* SavedPostViewController.swift in Sources */,
-				11F35C782557631D00C520F8 /* SignUpViewController.swift in Sources */,
 				4A265FF4257C59D10001BA8A /* RecipeDetailsController.swift in Sources */,
 				1540E68925806B7A0099EAA3 /* SavedPostCell.swift in Sources */,
 			);
